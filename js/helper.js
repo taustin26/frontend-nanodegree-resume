@@ -40,7 +40,7 @@ var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectImage = '<img class="project-image" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -85,7 +85,10 @@ function logClicks(x,y) {
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
+  var x = loc.pageX;
+  var y = loc.pageY;
+
+  logClicks(x,y);
 });
 
 
@@ -235,7 +238,7 @@ Uncomment the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+window.addEventListener('load', initializeMap);
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds

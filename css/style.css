@@ -156,6 +156,10 @@ ul {
   display: none;
 }
 
+.project-image{
+  width: 50%;
+}
+
 img {
   padding: 10px;
 }
@@ -191,6 +195,9 @@ span {
   }
   .welcome-message {
     display: none;
+  }
+  .project-image {
+    width: 100%;
   }
 }
 
